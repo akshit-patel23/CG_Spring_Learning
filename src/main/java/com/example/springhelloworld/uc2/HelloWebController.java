@@ -11,8 +11,7 @@ public class HelloWebController {
         public String hello(Model model) {
                 model.addAttribute("message", "Hello from Thymeleaf!");
                 return "hello";  // Corresponds to templates/hello.html
-        }
-        @GetMapping("/web/message")
+        }@GetMapping("/web/message")
         public String message(@NotNull Model model){
                 model.addAttribute("message","This is a custom message");
             return "message";
